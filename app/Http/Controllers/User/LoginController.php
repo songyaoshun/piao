@@ -68,9 +68,9 @@ class LoginController extends CommonController
             ];
 
             $validator=Validator::make($input,$rules,$message);
-
+            dd($validator->passes());
             if($validator->passes()){
-                dd($validator->passes());
+
                 $user = User::first();
                 $_password=Crypt::decrypt($user->user_passwd);
                 if ($input['password_o']==$_password){
