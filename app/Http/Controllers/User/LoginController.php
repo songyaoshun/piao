@@ -70,7 +70,7 @@ class LoginController extends CommonController
             $validator=Validator::make($input,$rules,$message);
             if($validator->passes()){
 
-                $user = User::where('user_mobile',$input['user_mobile'])->get();
+                $user = User::where('user_mobile',$input['user_mobile'])->count();
                 //$user = User::where('user_id',1)->get();
                 //$user= User::first();
                 dd($user);
