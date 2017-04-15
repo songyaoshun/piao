@@ -16,6 +16,7 @@ Route::get('/', 'IndexController@index');
 Route::group(['middleware' => ['web']], function () {
     Route::get('user/login','User\LoginController@login');
     Route::get('user/register','User\LoginController@register');
+    Route::get('user/code','User\LoginController@code');
 });
 
 Route::group(['middleware' => ['user.login']], function () {

@@ -49,7 +49,7 @@
                 <td>
 
                     <input type="text" class="code" name="code"/>
-                    <span><img src="#" alt=""></span>
+                    <span><img src="{{url('user/code')}}" alt="" onclick="this.src='{{url('user/code')}}"></span>
                 </td>
 
             </tr>
