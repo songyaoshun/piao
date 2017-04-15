@@ -49,7 +49,7 @@
                 <td>
 
                     <input type="text" class="code" name="code"/>
-                    <span><img src="{{url('user/code')}}" alt="" onclick="this.src='{{url('user/code')}}"></span>
+                    <span><img src="{{url('user/code')}}" alt="" onclick="this.src='{{url('user/code')}}?' +Math.random()"></span>
                 </td>
 
             </tr>
