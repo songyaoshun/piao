@@ -1,12 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="utf-8">
-	<link rel="stylesheet" href="style/css/ch-ui.admin.css">
-	<link rel="stylesheet" href="style/font/css/font-awesome.min.css">
-    <script type="text/javascript" src="style/js/jquery.js"></script>
-    <script type="text/javascript" src="style/js/ch-ui.admin.js"></script>
-</head>
+@extends('layout.user)
+
+@section('content')
+
 <body>
     <!--面包屑导航 开始-->
 <div class="crumb_warp">
@@ -51,4 +46,5 @@
         </div>
     </div>
 </body>
-</html>
+
+@endsection
