@@ -14,12 +14,12 @@
 Route::get('/', 'IndexController@index');
 
 Route::group(['middleware' => ['web']], function () {
-    Route::get('user/login','User\LoginController@login');
-    Route::get('user/register','User\LoginController@register');
+    Route::post('user/login','User\LoginController@login');
+    Route::post('user/register','User\LoginController@register');
     Route::get('user/code','User\LoginController@code');
 });
 
 Route::group(['middleware' => ['user.login']], function () {
-    Route::get('user/authen','User\UserController@authen');
-    Route::get('user/subpiao','User\UserController@subpiao');
+    Route::post('user/authen','User\UserController@authen');
+    Route::post('user/subpiao','User\UserController@subpiao');
 });
