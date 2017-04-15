@@ -2,9 +2,14 @@
 
 namespace App\Http\Controllers\User;
 
+
+
+use App\Http\Model\User;
 use Illuminate\Http\Request;
 
 use App\Http\Requests;
+use Illuminate\Support\Facades\Crypt;
+use Illuminate\Support\Facades\Input;
 
 require_once '/data1/www/piao/resources/org/code/Code.class.php';
 
