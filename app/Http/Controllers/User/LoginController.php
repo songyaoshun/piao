@@ -71,7 +71,8 @@ class LoginController extends CommonController
             if($validator->passes()){
 
                 //$user = User::where('user_mobile',$input['user_mobile'])->get();
-                $user = User::where('user_id',1)->get();
+                //$user = User::where('user_id',1)->get();
+                $user= User::first();
                 dd($user->user_id);
                 $_password=Crypt::decrypt($user->user_passwd);
                 if ($input['password_o']==$_password){
