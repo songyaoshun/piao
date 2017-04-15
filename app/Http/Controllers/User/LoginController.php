@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 
 use App\Http\Requests;
 
-require_once '/data1/www/piao/resources/views/org/code/Code.class.php';
+require_once '/data1/www/piao/resources/org/code/Code.class.php';
 
 class LoginController extends CommonController
 {
