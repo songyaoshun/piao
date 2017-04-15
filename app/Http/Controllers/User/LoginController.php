@@ -73,7 +73,7 @@ class LoginController extends CommonController
                 //$user = User::where('user_mobile',$input['user_mobile'])->get();
                 //$user = User::where('user_id',1)->get();
                 $user= User::first();
-                dd($user->user_id);
+                dd($user);
                 $_password=Crypt::decrypt($user->user_passwd);
                 if ($input['password_o']==$_password){
                     $user->user_passwd = Crypt::encrypt($input['password']);
